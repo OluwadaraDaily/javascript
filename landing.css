@@ -1,0 +1,72 @@
+.slideshow {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/image1.jpg");
+	background-position: center top;
+	height: 350px;
+	background-size: 1500px;
+	width: 100%;
+	padding: 20%;
+}
+
+.slideshow h1 {
+	color: white;
+}
+
+
+h1 {
+	font-family: sans-serif;
+	font-weight: 1000000000000;
+	color: #000;
+	text-align: center;	
+}
+
+ul {
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #3ddad7;	
+}
+
+li {
+	float: left;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 90000000000000;
+}
+li a {
+	display: block;
+  	color: white;
+  	text-align: center;
+  	padding: 25px 16px;
+  	text-decoration: none;
+}
+li a:hover {
+	background-color: #700;
+}
+.aboutus {
+	background-color: white;
+}
+#left{
+	padding-left: 15%;
+	padding-right: 25%;
+}
+.mid-section {
+	padding: 3%;
+}
+.lower-section{
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/image3.jpg");
+	background-position: center top;
+	height: 350px;
+	background-size: 1500px;
+	width: 100%;	
+}
+#sub-heading {
+	font-weight: 0;
+	text-align: center;
+}
+#left-section {
+	width: 20%;
+	float: left;
+	position: relative;
+	margin-left: 20%;
+}

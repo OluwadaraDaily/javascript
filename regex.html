@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Regular Expressions | 12-02-2019 </title>
+		<script type="text/javascript">
+
+				function validate(form){ 
+					var address = document.getElementById('address');
+					var postalCode = document.getElementById('postalCode');
+					var oneWord = document.getElementById('oneWord');
+					var twoWords = document.getElementById('twoWords');
+
+				  
+				  if(address.value =="") {
+				  	alert("Address is required")
+				  	address.focus();
+				  	return false;
+				  }
+
+				  else if (!address.value.match(/^[a-zA-Z0-9,.-\s]+$/) ) {
+				  	alert("Incorrect address format");
+				  	address.focus();
+				  	return false;
+				  }
+
+				  else if(postalCode.value =="") {
+				  	alert("Postal Code is required")
+				  	postalCode.focus();
+				  	return false;
+				  }
+
+				  else if (!postalCode.value.match(/^[0-9]{0,6}$/) ) {
+				  	alert("Incorrect postal code format");
+			  		postalCode.focus();
+				  	return false;
+				  }
+
+				  else if(oneWord.value =="") {
+				  	alert("Only one word is allowed!")
+				  	oneWord.focus();
+				  	return false;
+				  }
+
+				  else if (!oneWord.value.match(/^[/w\S]+$/) ) {
+				  	alert("Incorrect one word format");
+			  		oneWord.focus();
+				  	return false;
+				  }
+
+				  else if(twoWords.value =="") {
+				  	alert("Two words are allowed there!")
+				  	twoWords.focus();
+				  	return false;
+				  }
+
+				  else if (!twoWords.value.match(/^[^\s]+\s[^\s]+$/) ) {
+				  	alert("Incorrect truewo words format");
+			  		twoWords.focus();
+				  	return false;
+				  } 
+
+				  else {
+				  	return true;
+				  }
+				}
+
+
+		</script>
+	</head>
+	<body>
+		<h1> Regular Expressions Exercise </h1>
+		<!-- <form method="POST"	onsubmit="return validate(this)" name="form"> -->
+			<label> Address </label>
+			<textarea name="address" id="address" class="form-control"></textarea> <br> <br>
+
+			<label> Postal Code </label>
+			<input type="text" name="postalCode" id="postalCode" class="form-control"> <br> <br>
+
+			<label> One word </label>
+			<input type="text" name="oneWord" id="oneWord" class="form-control">  <br> <br>
+
+			<label> Two or more words </label>
+			<input type="text" name="twoWords" id="twoWords" class="form-control"> <br> <br>
+
+			<input type="button" name="submit" onclick="validate()" value="LET'S GO">
+
+		<!-- </form> -->
+	</body>
+</html>
